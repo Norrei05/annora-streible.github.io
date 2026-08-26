@@ -1,0 +1,30 @@
+.footnotes {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(22, 16, 16);
+    padding: 25px 45px;
+    align-items: center;
+    text-align: left;
+    color: lightgray;
+}
+
+.footnotes h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.footnotes path {
+    color: lightgray;
+}
+                
+.links a {
+    text-decoration: none;
+}
+                
+@media(max-width: 768px) {
+    .footnotes { 
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: center;
+    }
+}

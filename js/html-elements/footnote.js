@@ -12,43 +12,14 @@ class Footnote extends HTMLElement {
      */
     connectedCallback() {
         this.innerHTML = `
-            <style>
-                .footnotes {
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 25px 45px;
-                    align-items: center;
-                    text-align: left;
-                }
-
-                .footnotes h2 {
-                    font-weight: bold;
-                }
-
-                .footnotes h2 {
-                    text-align: left;
-                }
-                
-                .links a {
-                    text-decoration: none;
-                }
-                
-                @media(max-width: 768px) {
-                    .footnotes { 
-                        flex-direction: column; 
-                        justify-content: center; 
-                        text-align: center;
-                    }
-                }
-            </style>
-
+            <link rel="stylesheet" href="./css/footnote.css">
             <div class="footnotes">
                 <div class="title digital-text">
-                    <h2>Portfolio name</h2>
-                    <p class="digital-text">Roles</p>
+                    <h2>Annora Streible</h2>
+                    <p class="digital-text">Game Developer</p>
                 </div>
                 <div class="links">
-                    <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/annora-streible/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                         <i class="fa-brands fa-linkedin fa-3x"></i>
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" title="Github">

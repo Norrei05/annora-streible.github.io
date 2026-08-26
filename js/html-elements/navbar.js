@@ -11,33 +11,29 @@ class Navbar extends HTMLElement {
 
         shadow.innerHTML = `
             <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
-            <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+            <link rel="stylesheet" href="./css/navbar.css">
+            <script src="./js/bootstrap/bootstrap.min.js"></script>
 
-            <style>
-            </style>
-
-            <nav>
+            <nav class="navbar custom-nav navbar-expand-lg" role="navigation">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index">Portfolio name</a>
+                    <a class="navbar-brand" href="index">Annora Streible</a>
 
                     <button class="navbar-toggler" type="button" id="navToggle" data-bs-toggle="collapse" data-bs-target="#navbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav gap-lg-3">
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="./about-me>About Me</a>
+                                <a class="nav-link" href="about-me">About Me</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="./projects>Projects</a>
+                                <a class="nav-link" href="projects">Projects</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="./contacts>Contacts</a>
+                                <a class="nav-link" href="contacts">Contacts</a>
                             </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="./resume>Resume</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
