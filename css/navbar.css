@@ -1,52 +1,56 @@
+/** Private CSS styles for the nav-bar element */
+
+/** Style the overall navigation bar */
 .custom-nav {
     background-color: rgb(22, 16, 16);
     align-items: center;
-    padding: 0px;
 }
 
+/** Sends all nav-links to the end of the navbar */
 .navbar-collapse {
     justify-content: end;
 }
-                
+
+/** Styles pills containing the nav-links */
 .nav-item {
-    background-color: rgb(22, 16, 16);
     font-weight: normal;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    transition: transform 0.3s ease, font-weight 0.3s ease; 
+    transition: transform 0.2s ease, font-weight 0.2s ease, background-color 0.2s ease; 
 }
     .nav-item:hover, .nav-item:active, .nav-item:focus {
         font-weight: bold;
         transform: scale(1.02);
         background-color: rgb(47, 33, 33);
     }
+    .nav-item.active {
+        background-color: rgb(47, 33, 33);
+    }
 
+/** Styles the navigation links */
 .nav-link {
     color: lightgray;
 }
     .nav-link:hover {
-        color: white !important;
-        text-decoration: underline;
-        text-underline-offset: 7px;
+        color: white;
     }
     .nav-link.active {
-        color: darkred;
+        color: darkgray;
         font-weight: bold;
-        text-decoration: underline !important;
-        text-underline-offset: 7px;
     }
 
+/** Styles the portfolio's title name in the nav-bar */
 .navbar-brand {
     padding-right: 45px;
     color: lightgray;
-    transition: font-weight 0.1s ease;
+    transition: font-weight 0.2s ease;
 }
     .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
-        color: white !important;
+        color: white;
+        font-weight: bold;
     }
 
+/** Changes nav-bar display settings for mobile screen */
 @media(max-width: 990px) {
     .custom-nav { gap: 0; align-items: start; }
     .nav-item:hover { transform: scale(1.01); }
-    .navbar-collapse { justify-content: start;}
+    .navbar-collapse { justify-content: start; padding-top: 6px; }
 }

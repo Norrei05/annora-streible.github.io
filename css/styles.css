@@ -1,28 +1,31 @@
-/** Remove border from page body */
+/** Style major body tags */
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(129, 120, 120);
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins';
+}
+
+main {
+    flex: 1;
 }
 
 footer {
     margin-top: 2em;
 }
 
-hr {
-    border-width: 2px;
-    border-color: black;
-    opacity: 1;
-}
-
+/** Create a padded container with centered content */
 .container {
     margin: 1em;
-    justify-content: center;
+    align-items: center;
     justify-self: center;
 }
 
+/** Style heading tags */
 h1 {
     text-align: center;
     font-weight: bold;
@@ -30,8 +33,43 @@ h1 {
 
 h2 {
     text-align: center;
+
 }
 
-h3 {
+h4 {
+    text-align: center;
+    font-weight: semi-bold;
+}
+
+/** Sets text aligned to the center */
+.text-center {
     text-align: center;
 }
+
+/** Styles the email link */
+.email {
+    text-decoration: none;
+    color: black;
+}
+    .email:hover {
+        color: blue;
+    }
+
+/** Create a tapered horizontal line */
+.fade-line {
+    border: 0;
+    height: 2px;
+    opacity: 1;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+/** Styles the socials icons */
+path {
+    color: lightgray;
+}
+    .social:hover path {
+        color: white;
+    }
+    path a {
+        text-decoration: none;
+    }

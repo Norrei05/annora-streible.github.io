@@ -14,7 +14,7 @@ class Navbar extends HTMLElement {
             <link rel="stylesheet" href="./css/navbar.css">
             <script src="./js/bootstrap/bootstrap.min.js"></script>
 
-            <nav class="navbar custom-nav navbar-expand-lg" role="navigation">
+            <nav class="navbar navbar-dark custom-nav navbar-expand-lg" role="navigation">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index">Annora Streible</a>
 
@@ -33,7 +33,11 @@ class Navbar extends HTMLElement {
                             <li class="nav-item px-2">
                                 <a class="nav-link" href="contacts">Contacts</a>
                             </li>
-
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="./assets/documents/STREIBLE_ANNORA_Resume.pdf" target="_blank" title="View PDF">
+                                    Resume
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

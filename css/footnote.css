@@ -1,3 +1,6 @@
+/** Private styles for the foot-note element */
+
+/** Styles the overall footnote container */
 .footnotes {
     display: flex;
     justify-content: space-between;
@@ -8,23 +11,8 @@
     color: lightgray;
 }
 
+/** Styles heading 2 only within the footnote element */
 .footnotes h2 {
     font-weight: bold;
     text-align: left;
-}
-
-.footnotes path {
-    color: lightgray;
-}
-                
-.links a {
-    text-decoration: none;
-}
-                
-@media(max-width: 768px) {
-    .footnotes { 
-        flex-direction: column; 
-        justify-content: center; 
-        text-align: center;
-    }
 }
