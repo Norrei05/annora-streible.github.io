@@ -2,17 +2,21 @@
  * Defines a custom footnote element that is shared by all pages of the website.
  */
 class FootNote extends HTMLElement {
+
+    /** 
+     * Constructs the element
+     */
     constructor() {
         super();
     }
 
     /**
-     * Creates the html and css of the footnote element and attaches directly to the page itself.
+     * Constructs the html and css of the footnote element and attaches directly to the page itself.
      * A shadow is not used for this custom element to retain it's functionality.
      */
     connectedCallback() {
         this.innerHTML = `
-            <link rel="stylesheet" href="./css/footnote.css">
+            <link rel="stylesheet" href="./web-components/foot-note/foot-note.css">
             <div class="footnotes">
                 <div class="title">
                     <h2>Annora Streible</h2>

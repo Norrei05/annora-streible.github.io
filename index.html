@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="./css/styles.css" />
         <script src="./js/fonts-awesome/all.min.js"></script>
         <script src="./js/bootstrap/bootstrap.min.js"></script>
-        <script src="./js/html-elements/navbar.js"></script>
-        <script src="./js/html-elements/foot-note.js"></script>
+        <script src="./web-components/nav-bar/nav-bar.js"></script>
+        <script src="./web-components/foot-note/foot-note.js"></script>
+        <script src="./web-components/feature-box/feature-box.js"></script>
     </head>
 
     <body>
@@ -20,7 +21,7 @@
         </header>
 
         <main>
-            <div class="container">
+            <section class="container-fluid intro floatIn">
                 <h1>Hello! I am Annora Streible</h1>
                 <h4>Student at Rochester Institute of Technology</h4>
                 <hr class="fade-line"/>
@@ -29,11 +30,35 @@
                     My interests lie in cross-cultural and interactive design, and I hope to pursue 
                     it as a career at an international company in the future
                 </p>
-            </div>
+            </section>
 
-            <div class="featured container">
+            <section class="floatIn">
                 <h2>Featured Projects</h2>
-            </div>
+
+                <div class="d-flex center-items">
+                    <feature-box>
+                        <span slot="title">Frag: New Heights</span>
+                        <span slot="details">
+                            <p>
+                                In a team of 2, I worked alongside my partner to design and develop an expansion pack
+                                for the pre-existing game Frag by Steve Jackson Games
+                            </p>
+                            <button><a href="./projects.html">Learn More</a></button>
+                        </span>
+                    </feature-box>
+
+                    <feature-box>
+                        <span slot="title">Raise the Rays</span>
+                        <span slot="details">
+                            <p>
+                                In a team of 4, I worked as the lead UI designer to design and develop a top-down
+                                shooter in Monogame using C# with a focus on visual design.
+                            </p>
+                            <button><a href="./projects.html">Learn more</a></button>
+                        </span>
+                    </feature-box>
+                </div>
+            </section>
         </main>
 
         <footer>

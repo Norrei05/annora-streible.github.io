@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="./css/styles.css" />
         <script src="./js/fonts-awesome/all.min.js"></script>
         <script src="./js/bootstrap/bootstrap.min.js"></script>
-        <script src="./js/html-elements/navbar.js"></script>
-        <script src="./js/html-elements/foot-note.js"></script>
+        <script src="./web-components/nav-bar/nav-bar.js"></script>
+        <script src="./web-components/foot-note/foot-note.js"></script>
     </head>
 
     <body>
@@ -20,15 +20,19 @@
         </head>
         
         <main>
-            <div class="container">
-                <h1>Contacts</h1>
+            <div class="container-fluid floatIn">
+                <h1>Contact me!</h1>
                 <hr class="fade-line">
 
-                <div class="text-center">
-                    <a class="email" href="mailto:andstreible@gmail.com">andstreible@gmail.com</a>
-                    <br/><br/>
-                    <p>704-965-6720</p>
+                <div class="text-center mb-4">
+                    <p><strong>Email: </strong>
+                        <a class="email" href="mailto:andstreible@gmail.com">andstreible@gmail.com</a>
+                    </p>
+                    <p><strong>Phone: </strong>704-965-6720</p>
+                </div>
 
+                <div>
+                    <h4>Socials</h4>
                     <a class="social" href="https://www.linkedin.com/in/annora-streible/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                         <i class="fa-brands fa-linkedin fa-3x"></i>
                     </a>

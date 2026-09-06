@@ -4,14 +4,16 @@
  */
 class Navbar extends HTMLElement {
 
-    /** HTML and CSS to create the navbar element */
+    /**
+     * Constructs the html of the element and adds in stylesheets and javascript
+     */
     constructor() {
         super();
         const shadow = this.attachShadow({ mode: 'open' });
 
         shadow.innerHTML = `
             <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
-            <link rel="stylesheet" href="./css/navbar.css">
+            <link rel="stylesheet" href="./web-components/nav-bar/nav-bar.css">
             <script src="./js/bootstrap/bootstrap.min.js"></script>
 
             <nav class="navbar navbar-dark custom-nav navbar-expand-lg" role="navigation">

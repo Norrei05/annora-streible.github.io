@@ -18,11 +18,27 @@ footer {
     margin-top: 2em;
 }
 
+/** Creates a float in animation from the bottom to the top */
+@keyframes floatIn {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /** Create a padded container with centered content */
-.container {
-    margin: 1em;
-    align-items: center;
-    justify-self: center;
+.container-fluid {
+    padding: 1em;
+    text-align: center;
+}
+
+.center-items {
+    justify-content: center;
+    gap: 15px;
 }
 
 /** Style heading tags */
@@ -73,3 +89,14 @@ path {
     path a {
         text-decoration: none;
     }
+
+/** Adds the floatIn animation to a tag */
+.floatIn {
+    animation: floatIn 0.8s ease-out forwards;
+}
+
+.intro {
+    padding: 50px 25px;
+    justify-content: center;
+    align-items: center;
+}
