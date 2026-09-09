@@ -5,8 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(129, 120, 120);
-    color: black;
+    background-color: black;
+    color: lightgray;
     font-family: 'Poppins';
 }
 
@@ -34,6 +34,32 @@ footer {
 .container-fluid {
     padding: 1em;
     text-align: center;
+}
+
+.raise-the-rays-background {
+    background-image: url('../assets/images/toRaiseTheRays/ToRaiseTheRaysExample3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raise-the-rays-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadow-box-content {
+    position: relative;
+    z-index: 2;
 }
 
 .center-items {
@@ -76,7 +102,7 @@ h4 {
     border: 0;
     height: 2px;
     opacity: 1;
-    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent);
 }
 
 /** Styles the socials icons */

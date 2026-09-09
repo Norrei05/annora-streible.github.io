@@ -2,8 +2,10 @@
 
 /** Style the overall navigation bar */
 .custom-nav {
-    background-color: rgb(22, 16, 16);
+    background-color: rgb(35, 10, 10);
     align-items: center;
+    border-bottom: 2px black solid;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 /** Sends all nav-links to the end of the navbar */
@@ -14,15 +16,11 @@
 /** Styles pills containing the nav-links */
 .nav-item {
     font-weight: normal;
-    transition: transform 0.2s ease, font-weight 0.2s ease, background-color 0.2s ease; 
+    transition: transform 0.2s ease, font-weight 0.2s ease; 
 }
     .nav-item:hover, .nav-item:active, .nav-item:focus {
         font-weight: bold;
         transform: scale(1.02);
-        background-color: rgb(47, 33, 33);
-    }
-    .nav-item.active {
-        background-color: rgb(47, 33, 33);
     }
 
 /** Styles the navigation links */
@@ -30,22 +28,25 @@
     color: lightgray;
 }
     .nav-link:hover {
-        color: white;
+        color: red;
     }
     .nav-link.active {
-        color: darkgray;
+        color: darkred !important;
+        opacity: 0.8;
         font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 6px;
     }
 
 /** Styles the portfolio's title name in the nav-bar */
 .navbar-brand {
     padding-right: 45px;
     color: lightgray;
-    transition: font-weight 0.2s ease;
+    font-weight: bold;
+    transition: color 0.2s ease;
 }
     .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
-        color: white;
-        font-weight: bold;
+        color: red;
     }
 
 /** Changes nav-bar display settings for mobile screen */
