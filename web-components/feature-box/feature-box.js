@@ -14,14 +14,9 @@ class FeatureBox extends HTMLElement {
             <link rel="stylesheet" href="./web-components/feature-box/feature-box.css">
 
             <div class="feature">
-                <div class="title">
-                    <h3><slot name="title"></slot></h3>
-                </div>
-                
-                <div class="content">
-                    <slot name="preview-img"></slot>
-                    <p><slot name="details"></slot></p>
-                </div>
+                <h3><slot name="title"></slot></h3>
+                <div class="content"><slot name="details"></slot></div>
+                <slot name="preview-img"></slot>
             </div>
         `;
     }

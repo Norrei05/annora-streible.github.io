@@ -18,14 +18,10 @@ class FootNote extends HTMLElement {
         this.innerHTML = `
             <link rel="stylesheet" href="./web-components/foot-note/foot-note.css">
             <div class="footnotes">
-                <div class="title">
-                    <h2>Annora Streible</h2>
-                </div>
-                <div class="links">
-                    <a class="social" href="https://www.linkedin.com/in/annora-streible/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin fa-3x"></i>
-                    </a>
-                </div>
+                <h2>Annora Streible</h2>
+                <a class="social" href="https://www.linkedin.com/in/annora-streible/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin fa-3x"></i>
+                </a>
             </div>
         `;
     }

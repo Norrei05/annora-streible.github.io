@@ -1,33 +1,32 @@
 /** Private styles for the feature-box element */
 
-.feature {
-    animation: floatUp 0.8s ease-out forwards; 
-    border: 2px black solid;
-    border-radius: 4px;
+.feature { 
+    background-color: darkgray;
+    border-radius: 5px;
     box-shadow: inset;
     width: 350px;
     height: fit-content;
     justify-content: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
     .feature:hover {
-        transform: translateY(-4px);
+        transform: scale(1.03);
         box-shadow: 0 4px 12px rgba(0,0,0,0.25);
         transition: all 0.2s ease-in-out;
     }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: 20px;
-}
-
 .content {
     padding: 10px 25px;
+    padding-bottom: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 15px;
 }
 
 @media(max-width: 450px) {
-    .feature { width: 275px; }
+    .feature { width: 340px; }
 }

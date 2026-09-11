@@ -5,8 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: black;
-    color: lightgray;
+    background-color: lightgray;
+    color: black;
     font-family: 'Poppins';
 }
 
@@ -30,23 +30,14 @@ footer {
     }
 }
 
-/** Create a padded container with centered content */
-.container-fluid {
-    padding: 1em;
-    text-align: center;
-}
-
-.raise-the-rays-background {
-    background-image: url('../assets/images/toRaiseTheRays/ToRaiseTheRaysExample3.png');
+.raise-the-rays-bkg {
+    background-image: url('../assets/images/toRaiseTheRays/Title_Day.png');
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.raise-the-rays-background::after {
+.raise-the-rays-bkg::after {
     content: '';
     position: absolute;
     top: 0;
@@ -54,33 +45,53 @@ footer {
     right: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgb(48, 48, 48), black);
+    opacity: 0.8;
 }
 
-.shadow-box-content {
+/** Create a padded container with centered content */
+.container-fluid {
+    padding: 1em;
+    text-align: center;
+}
+
+.intro {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    color: white;
     z-index: 2;
 }
 
 .center-items {
     justify-content: center;
-    gap: 15px;
+    gap: 2em;
 }
 
 /** Style heading tags */
 h1 {
     text-align: center;
     font-weight: bold;
+    font-size: 48px;
 }
 
 h2 {
     text-align: center;
-
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 1em;
 }
 
-h4 {
+.subheader {
+    font-size: 24px;
     text-align: center;
     font-weight: semi-bold;
+}
+
+.content p {
+    font-size: 14px;
 }
 
 /** Sets text aligned to the center */
@@ -98,11 +109,18 @@ h4 {
     }
 
 /** Create a tapered horizontal line */
-.fade-line {
+.fade-line-white {
     border: 0;
     height: 2px;
     opacity: 1;
     background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent);
+}
+
+.fade-line-black {
+    border: 0;
+    height: 2px;
+    opacity: 1;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
 }
 
 /** Styles the socials icons */
@@ -121,8 +139,44 @@ path {
     animation: floatIn 0.8s ease-out forwards;
 }
 
-.intro {
-    padding: 50px 25px;
-    justify-content: center;
+.rounded-img {
+    width: 200px;
+    clip-path: circle();
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    padding: 3em 4em;
+    gap: 2em;
+    display: flex;
     align-items: center;
+    text-align: left !important;
+    background-color: darkgray;
+    z-index: 2;
+}
+
+.shadow-box-content {
+    z-index: 2;
+}
+
+.btn {
+    background-color: darkred;
+    color: lightgray;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    margin-bottom: 15px;
+}
+    .btn:hover {
+        background-color: rgb(106, 0, 0);
+        color: white;
+    }
+
+[slot="preview-img"] {
+    border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 768px) {
+    .sub-container{ flex-direction: column;}
+    .center-items{flex-direction: column;}
+    [slot="preview-img"] { width: 340px; }
 }

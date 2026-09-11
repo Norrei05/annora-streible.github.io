@@ -2,10 +2,12 @@
 
 /** Style the overall navigation bar */
 .custom-nav {
-    background-color: rgb(35, 10, 10);
+    background-color: black;
     align-items: center;
     border-bottom: 2px black solid;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    padding: 5px 1em;
+    z-index: 2;
 }
 
 /** Sends all nav-links to the end of the navbar */
@@ -45,9 +47,6 @@
     font-weight: bold;
     transition: color 0.2s ease;
 }
-    .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
-        color: red;
-    }
 
 /** Changes nav-bar display settings for mobile screen */
 @media(max-width: 990px) {
