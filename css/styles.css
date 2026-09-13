@@ -91,7 +91,11 @@ h2 {
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.sub-container p {
+    font-size: 18px;
 }
 
 /** Sets text aligned to the center */
@@ -124,19 +128,23 @@ h2 {
 }
 
 /** Styles the socials icons */
-path {
-    color: lightgray;
+.socials path {
+    color: darkred
 }
-    .social:hover path {
-        color: white;
+    path a {
+        text-decoration: none;
     }
+
+path {
+    color: lightgray
+}
     path a {
         text-decoration: none;
     }
 
 /** Adds the floatIn animation to a tag */
 .floatIn {
-    animation: floatIn 0.8s ease-out forwards;
+    animation: floatIn 1s ease-out forwards;
 }
 
 .rounded-img {
@@ -174,6 +182,53 @@ path {
 [slot="preview-img"] {
     border-radius: 0 0 5px 5px;
 }
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gap5 {
+    gap: 5em;
+}
+
+.about-section {
+    padding: 4em 5em;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-align: left;
+}
+
+.language-section {
+    background-color: darkgray;
+    padding-top: 5px;
+}
+    ul {
+        list-style: none;
+        gap: 2em;
+        font-size: 28px;
+        margin-top: 1em;
+    }
+
+.red-accent {
+    background-color: darkred;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+    .red-accent:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        transition: all 0.2s ease-in-out;
+    }
 
 @media (max-width: 768px) {
     .sub-container{ flex-direction: column;}

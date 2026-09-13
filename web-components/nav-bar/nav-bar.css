@@ -30,10 +30,10 @@
     color: lightgray;
 }
     .nav-link:hover {
-        color: red;
+        color: rgb(186, 0, 0);
     }
     .nav-link.active {
-        color: darkred !important;
+        color: rgb(147, 25, 25) !important;
         opacity: 0.8;
         font-weight: bold;
         text-decoration: underline;
