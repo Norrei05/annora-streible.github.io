@@ -1,0 +1,53 @@
+/** Private styles for the feature-box element */
+
+.feature { 
+    background-color: rgb(200, 200, 200);
+    border-radius: 5px;
+    box-shadow: inset;
+    width: 350px;
+    height: 575px;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+    .feature:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        transition: all 0.2s ease-in-out;
+    }
+    .feature p {
+        font-size: 16px;
+    }
+
+.content {
+    padding: 0 25px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.preview-img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    flex-grow: 1;
+}
+
+.float-btn {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}

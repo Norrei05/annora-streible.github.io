@@ -6,10 +6,9 @@
         <title>Projects</title>
 
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/project-box.css">
         <script src="./js/fonts-awesome/all.min.js"></script>
-        <script src="./js/bootstrap/bootstrap.min.js"></script>
         <script src="./web-components/nav-bar/nav-bar.js"></script>
         <script src="./web-components/foot-note/foot-note.js"></script>
     </head>
@@ -20,53 +19,72 @@
         </head>
 
         <main>
-            <section class="container-fluid">
+            <section class="container projects">
                 <h1>Projects</h1>
-
-                <div id="Frag_NewHeights">
+                <article id="Frag_NewHeights" class="project">
                     <div>
                         <h2>Frag: New Heights</h2>
-                        <p>Academic Project | September 2025 &#8212; October 2025</p>
+                        <p class="dates">Academic Project | September 2025 &#8212; October 2025</p>
+                        <hr class="fade-line-black">
+                        <p>
+                            In a team of 2, I worked alongside my partner to design and develop an expansion pack
+                            for the pre-existing game Frag by Steve Jackson Games.
+                        </p>
+                        <p>
+                            My main responsibility during this project was to take our ideas and translate them into
+                            Frag&#39;s signature style. I did this by using the existing cards as a base and creating new
+                            ones in Clip Studio Paint PRO, as well as translating the new mechanics into
+                            understandable game instructions based on the terminology and writing style of the
+                            original game. In addition, I took careful and detailed notes during in-class playtesting.
+                        </p>
+                        <p>
+                            The expansion, alongside other groups in the class, has been recognized by Steve
+                            Jackson Games on their official blog as of December 27th, 2025. You can view the blog
+                            <a href="https://www.sjgames.com/ill/archive/December_27_2025/Frag_As_A_Teaching_Device" target="_blank">here</a>.
+                        </p>
+
+                        <a class="red-btn" role="button" href="./assets/documents/project-docs/Frag_NewHeights.pdf" target="_blank">View Documentation</a>
                     </div>
-                    <p>
-                        In a team of 2, I worked alongside my partner to design and develop an expansion pack
-                        for the pre-existing game Frag by Steve Jackson Games.
-                    </p>
-                    <p>
-                        My main responsibility during this project was to take our ideas and translate them into
-                        Frag&#39;s signature style. I did this by using the existing cards as a base and creating new
-                        ones in Clip Studio Paint PRO, as well as translating the new mechanics into
-                        understandable game instructions based on the terminology and writing style of the
-                        original game. In addition, I took careful and detailed notes during in-class playtesting.
-                    </p>
-                    <p>
-                        The expansion, alongside other groups in the class, has been recognized by Steve
-                        Jackson Games on their official blog as of December 27th, 2025. You can view the blog
-                        <a href="https://www.sjgames.com/ill/archive/December_27_2025/Frag_As_A_Teaching_Device" target="_blank">here</a>.
-                    </p>
+                    <div>
 
-                    <a class="btn" role="button" href="./assets/documents/project-docs/Frag_NewHeights.pdf" target="_blank">View Documentation</a>
-                </div>
+                    </div>
+                </article>
 
-                <div id="RaiseTheRays">
+                <article id="RaiseTheRays" class="project">
                     <div>
                         <h2>Raise the Rays</h2>
-                        <p>Academic Project | February 2025 &#8212; May 2025</p>
-                    </div>
-                    <p>
-                        In a team of 4, I worked as the lead UI designer to design and develop a top-down
-                        shooter in Monogame using C# with a focus on visual design.
-                    </p>
-                    <p>
-                        My responsibilities included creating the game state wireframes and implementing
-                        them, as well as a high score display with automatic character spacing adaptability based
-                        on file input and a mostly randomized scrolling map out of external tile assets. In
-                        addition, I collaborated with other team members to connect assets with playable
-                        mechanics, and to modify visuals as needed in order to enhance the player experience.
-                    </p>
+                        <p class="dates">Academic Project | February 2025 &#8212; May 2025</p>
+                        <hr class="fade-line-black">
+                        <p>
+                            In a team of 4, I worked as the lead UI designer to design and develop a top-down
+                            shooter in Monogame using C# with a focus on visual design.
+                        </p>
+                        <p>
+                            My responsibilities included creating the game state wireframes and implementing
+                            them, as well as a high score display with automatic character spacing adaptability based
+                            on file input and a mostly randomized scrolling map out of external tile assets. In
+                            addition, I collaborated with other team members to connect assets with playable
+                            mechanics, and to modify visuals as needed in order to enhance the player experience.
+                        </p>
 
-                    <a class="btn" role="button" href="https://github.com/Norrei05/ToRaiseTheRays" target="_blank">View Repository</a>
-                </div>
+                        <a class="red-btn" role="button" href="https://github.com/Norrei05/ToRaiseTheRays" target="_blank">View Repository</a>
+                    </div>
+                    <div class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/toRaiseTheRays/Title_Day.png" class="d-block" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </article>
             </section>
         </main>
         

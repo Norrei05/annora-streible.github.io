@@ -2,7 +2,7 @@
 
 /** Style the overall navigation bar */
 .custom-nav {
-    background-color: black;
+    background-color: rgb(20, 0, 0);
     align-items: center;
     border-bottom: 2px black solid;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
@@ -27,17 +27,15 @@
 
 /** Styles the navigation links */
 .nav-link {
-    color: lightgray;
+    color: rgb(220, 220, 220);
 }
     .nav-link:hover {
-        color: rgb(186, 0, 0);
-    }
-    .nav-link.active {
-        color: rgb(147, 25, 25) !important;
-        opacity: 0.8;
-        font-weight: bold;
+        color: white;
         text-decoration: underline;
         text-underline-offset: 6px;
+    }
+    .nav-link.active {
+        color: rgb(200, 0, 0) !important;
     }
 
 /** Styles the portfolio's title name in the nav-bar */

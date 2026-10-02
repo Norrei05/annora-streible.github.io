@@ -1,0 +1,15 @@
+#project {
+    display: flex;
+    flex-direction: row;
+}
+
+.dates {
+    color: rgb(100, 0, 0);
+    margin: 0;
+    font-size: 18px;
+    font-weight: semi-bold;
+}
+
+@media (max-width: 600px) {
+    #project { flex-direction: column; }
+}

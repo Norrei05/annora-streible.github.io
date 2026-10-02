@@ -1,35 +1,3 @@
-/** Style major body tags */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: lightgray;
-    color: black;
-    font-family: 'Poppins';
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    margin-top: 2em;
-}
-
-/** Creates a float in animation from the bottom to the top */
-@keyframes floatIn {
-    0% {
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .raise-the-rays-bkg {
     background-image: url('../assets/images/toRaiseTheRays/Title_Day.png');
     background-size: cover;
@@ -49,13 +17,31 @@ footer {
     opacity: 0.8;
 }
 
-/** Create a padded container with centered content */
-.container-fluid {
-    padding: 1em;
-    text-align: center;
+/** Container styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(240, 235, 235);
+    color: black;
+    font-family: 'Poppins';
 }
 
-.intro {
+main {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+.container {
+    padding: 1em;
+}
+
+#intro {
     height: 500px;
     display: flex;
     justify-content: center;
@@ -65,91 +51,8 @@ footer {
     z-index: 2;
 }
 
-.center-items {
-    justify-content: center;
-    gap: 2em;
-}
-
-/** Style heading tags */
-h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 48px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-.subheader {
-    font-size: 24px;
-    text-align: center;
-    font-weight: semi-bold;
-}
-
-.content p {
-    font-size: 15px;
-}
-
-.sub-container p {
-    font-size: 18px;
-}
-
-/** Sets text aligned to the center */
-.text-center {
-    text-align: center;
-}
-
-/** Styles the email link */
-.email {
-    text-decoration: none;
-    color: black;
-}
-    .email:hover {
-        color: blue;
-    }
-
-/** Create a tapered horizontal line */
-.fade-line-white {
-    border: 0;
-    height: 2px;
-    opacity: 1;
-    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent);
-}
-
-.fade-line-black {
-    border: 0;
-    height: 2px;
-    opacity: 1;
-    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
-}
-
-/** Styles the socials icons */
-.socials path {
-    color: darkred
-}
-    path a {
-        text-decoration: none;
-    }
-
-path {
-    color: lightgray
-}
-    path a {
-        text-decoration: none;
-    }
-
-/** Adds the floatIn animation to a tag */
-.floatIn {
-    animation: floatIn 1s ease-out forwards;
-}
-
-.rounded-img {
-    width: 200px;
-    clip-path: circle();
+#intro-text {
+    z-index: 2;
 }
 
 .sub-container {
@@ -160,60 +63,122 @@ path {
     display: flex;
     align-items: center;
     text-align: left !important;
-    background-color: darkgray;
+    background-color: rgb(205, 205, 205);
     z-index: 2;
 }
 
-.shadow-box-content {
-    z-index: 2;
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.btn {
-    background-color: darkred;
-    color: lightgray;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    margin-bottom: 15px;
-}
-    .btn:hover {
-        background-color: rgb(106, 0, 0);
-        color: white;
-    }
-
-[slot="preview-img"] {
-    border-radius: 0 0 5px 5px;
+#about {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-align: start;
 }
 
+/** Layout styling */
 .d-flex-row {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
     align-items: center;
     justify-content: center;
 }
 
+.text-center {
+    text-align: center;
+}
 
 .gap5 {
     gap: 5em;
 }
 
-.about-section {
-    padding: 4em 5em;
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    text-align: left;
+/** Text element styling */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
 }
 
-.language-section {
-    background-color: darkgray;
-    padding-top: 5px;
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0;
 }
-    ul {
-        list-style: none;
-        gap: 2em;
-        font-size: 28px;
-        margin-top: 1em;
+
+.subheader {
+    font-size: 24px;
+    text-align: center;
+    font-weight: semi-bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+/** Tapered horizontal lines  */
+.fade-line-white {
+    border: 0;
+    height: 2px;
+    opacity: 1;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 2555, 0.75), transparent);
+}
+
+.fade-line-black {
+    border: 0;
+    height: 2px;
+    opacity: 1;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+/** Image element styling */
+.rounded-img {
+    border-radius: 50%;
+    width: 200px;
+    border: 1px darkgray solid;
+}
+
+/** Button link styling */
+.red-btn {
+    background-color: rgb(140, 0, 0);
+    color: rgb(220, 220, 220);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+    .red-btn:hover {
+        background-color: rgb(120, 0, 0);
+        color: white;
+    }
+
+/** Styles the email link */
+.email {
+    text-decoration: none;
+    color: black;
+}
+    .email:hover {
+        color: darkred;
+    }
+
+/** Styles the socials icons */
+.socials path {
+    color: darkred
+}
+    path a {
+        text-decoration: none;
+    }
+
+path {
+    color: rgb(220, 220, 220);
+}
+    path a {
+        text-decoration: none;
     }
 
 .red-accent {
@@ -230,8 +195,23 @@ path {
         transition: all 0.2s ease-in-out;
     }
 
-@media (max-width: 768px) {
-    .sub-container{ flex-direction: column;}
-    .center-items{flex-direction: column;}
-    [slot="preview-img"] { width: 340px; }
+@media (max-width: 770px) {
+    .sub-container { flex-direction: column; }
+    .d-flex-row { flex-direction: column; }
+}
+
+.carousel {
+    max-width: 50%;
+}
+
+/** Creates a float in animation from the bottom to the top */
+@keyframes floatIn {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
