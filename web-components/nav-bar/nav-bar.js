@@ -33,9 +33,6 @@ class Navbar extends HTMLElement {
                                 <a class="nav-link" href="projects">Projects</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="contacts">Contacts</a>
-                            </li>
-                            <li class="nav-item px-2">
                                 <a class="nav-link" href="./assets/documents/STREIBLE_ANNORA_Resume.pdf" target="_blank" title="View PDF">
                                     Resume
                                 </a>

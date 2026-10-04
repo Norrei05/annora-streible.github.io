@@ -1,15 +1,101 @@
-#project {
-    display: flex;
-    flex-direction: row;
+.project {
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: rgb(220, 220, 220);
+    height: fit-content;
 }
 
 .dates {
     color: rgb(100, 0, 0);
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: semi-bold;
 }
 
-@media (max-width: 600px) {
-    #project { flex-direction: column; }
+.type {
+    color: rgb(100, 0, 0);
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 1em;
+    min-height: 300px;
+    width: 250px;
+}
+
+.slide {
+    display: none;
+    width: 250px;
+}
+
+.slide > img {
+    width: 100%;
+}
+
+.caption {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 14px;
+    color: rgb(100, 0, 0);
+}
+
+.slide-num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: 0.3s ease;
+    user-select: none;
+}
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 0;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 770px) {
+    .project { flex-direction: column; }
+}
+
+/** Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
 }

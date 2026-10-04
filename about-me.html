@@ -6,10 +6,8 @@
         <title>About Me</title>
 
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
-        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/styles.css" />
         <script src="./js/fonts-awesome/all.min.js"></script>
-        <script src="./js/bootstrap/bootstrap.min.js"></script>
         <script src="./web-components/nav-bar/nav-bar.js"></script>
         <script src="./web-components/foot-note/foot-note.js"></script>
     </head>
@@ -23,7 +21,7 @@
             <section class="container">
                 <h1>About Me</h1>
                 <hr class="fade-line-black">
-                <div id="about">
+                <div id="about" class="d-flex-row">
                     <div>
                         <p>
                             Hello! I am Annora Streible, a third year student pursuing a Bachelor of Science in
@@ -50,7 +48,18 @@
                             the skills gained from my project experience.
                         </p>
                     </div>
-                    <img src="./assets/images/profileImage.png" alt="Profile picture" height="300">
+                    <div>
+                        <img class="full-size-img" src="./assets/images/fullSizeProfile.jpg" alt="Full size profile image">
+                    </div>
+                </div>
+                <hr class="fade-line-black">
+                <div id="skills">
+                    <h2 class="smaller-h2">Technical Skills</h2>
+                    <ul>
+                        <li><strong>Languages</strong> | Japanese, C#, Java, Python</li>
+                        <li><strong>Tools</strong> | GitHub, Monogame, Unity, Visual Studio Code, Trello, Clip Studio Paint PRO</li>
+                        <li><strong>Operating Systems</strong> | Windows, iOS</li>
+                    </ul>
                 </div>
             </section>
         </main>

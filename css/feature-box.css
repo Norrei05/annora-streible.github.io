@@ -3,13 +3,11 @@
 .feature { 
     background-color: rgb(200, 200, 200);
     border-radius: 5px;
-    box-shadow: inset;
     width: 350px;
-    height: 575px;
+    height: 100%;
     padding-top: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
     .feature:hover {
@@ -23,6 +21,7 @@
 
 .content {
     padding: 0 25px;
+    height: 160px;
 }
 
 h3 {
@@ -35,10 +34,6 @@ h3 {
 .preview-img {
     display: block;
     width: 100%;
-    overflow: hidden;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    flex-grow: 1;
 }
 
 .float-btn {
@@ -50,4 +45,15 @@ h3 {
 .img-container {
     position: relative;
     display: inline-block;
+    height: 350px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    flex: 1;
+}
+
+@media(max-width: 770px) {
+    .feature { width: 275px; }
+    .feature p { font-size: 14px; }
+    .content { height: 150px; }
 }

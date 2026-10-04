@@ -16,5 +16,31 @@
 .footnotes h2 {
     font-weight: bold;
     text-align: left;
-    font-size: 26px;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
+
+/** Styles the email link */
+.email {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+}
+    .email:hover {
+        color: white;
+    }
+
+.footnotes p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/** Styles the socials icons */
+path {
+    color: rgb(220, 220, 220);
+}
+    path a {
+        text-decoration: none;
+    }
+    path:hover {
+        color: white;
+    }
