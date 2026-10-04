@@ -52,7 +52,7 @@
     padding: 10px;
     font-size: 14px;
     color: white;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
@@ -64,13 +64,13 @@
     width: auto;
     font-weight: bold;
     color: white;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0, 0.4);
     border-radius: 5px;
     transition: 0.3s ease;
     user-select: none;
 }
     .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
 .prev {
@@ -86,6 +86,7 @@
 }
 
 @media (max-width: 770px) {
+    h2 { font-size: 30px; }
     .project { flex-direction: column; }
 }
 

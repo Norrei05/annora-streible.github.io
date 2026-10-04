@@ -35,7 +35,7 @@
         text-underline-offset: 6px;
     }
     .nav-link.active {
-        color: rgb(200, 0, 0) !important;
+        color: rgb(230, 0, 0) !important;
     }
 
 /** Styles the portfolio's title name in the nav-bar */
